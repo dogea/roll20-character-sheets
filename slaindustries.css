@@ -1,0 +1,31 @@
+.charsheet {
+	background-color: #ddd;
+	min-width: 800px;
+}
+
+/* Universal styling applied to all elements of these types */
+
+h1 {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 2em;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+label {
+	display: inline-block;
+	width: 31%;
+}
+
+input {
+	display: inline-block;
+	width: 165px;
+}
+
+span {
+  display: inline-block;
+}

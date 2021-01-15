@@ -1,0 +1,186 @@
+<h1>SLA Industries</h1>
+
+<h2>SLA Operative Security Clearance Card</h2>
+
+<div class="3colrow">
+   <div class="col">
+      <label>NAME: </label><input type="text" name='attr_name'>
+   </div>
+   <div class="col">
+      <label>RACE: </label><input type="text" name='attr_race'>
+   </div>
+   <div class="col">
+      <label>PACKAGE: </label><input type="text" name='attr_package'>
+   </div>
+   <div class="col">
+      <label>SQUAD: </label><input type="text" name='attr_squad'>
+   </div>
+   <div class="col">
+      <label>SCL: </label><input type="number" name='attr_scl'>
+   </div>
+</div>
+
+<h2>Rating Points</h2>
+
+<div class="3colrow">
+   <div class="col">
+      <label>BODY: </label><input type="number" name='attr_body'>
+   </div>
+   <div class="col">
+      <label>BRAINS: </label><input type="number" name='attr_brains'>
+   </div>
+   <div class="col">
+      <label>BRAVADO: </label><input type="number" name='attr_bravado'>
+   </div>
+</div>
+
+<h2>Stats</h2>
+
+<div class="3colrow">
+   <div class="col">
+      <label>STR: </label><input type="number" name='attr_str'>
+   </div>
+   <div class="col">
+      <label>KNOW: </label><input type="number" name='attr_know'>
+   </div>
+   <div class="col">
+      <label>CHA: </label><input type="number" name='attr_cha'>
+   </div>
+</div>
+<div class="3colrow">
+   <div class="col">
+      <label>DEX: </label><input type="number" name='attr_dex'>
+   </div>
+   <div class="col">
+      <label>CONC: </label><input type="number" name='attr_conc'>
+   </div>
+   <div class="col">
+      <label>COOL: </label><input type="number" name='attr_cool'>
+   </div>
+</div>
+<div class="3colrow">
+   <div class="col">
+      <label>Initiative Bonus: </label><input type="number" name='attr_initbonus'>
+   </div>
+   <div class="col">
+      <label>LUCK: </label><input type="number" name='attr_luck'>
+   </div>
+</div>
+
+<h2>Skills / Traits</h2>
+
+<div class="2colrow">
+   <div class="col">
+      <fieldset class="repeating_skills">
+         <input type="text" name="attr_skillname" />
+         <input type="number" name="attr_skillrank" />
+         <input type="number" name="attr_skillbonus" />
+      </fieldset>
+   </div>
+   <div class="col">
+      <fieldset class="repeating_traits">
+         <input type="text" name="attr_traitname" />
+         <input type="number" name="attr_traitrank" />
+      </fieldset>
+   </div>
+</div>
+
+<h2>Movement</h2>
+
+<label>Closing: </label><input type="number" name='attr_closing'>
+<label>Rushing: </label><input type="number" name='attr_rushing'>
+
+<h2>Hit Points</h2>
+
+<label>Actual: </label><input type="number" name='attr_hpa'>
+<label>Max: </label><input type="number" name='attr_hpm'>
+
+<h2>Wounds</h2>
+
+<div class="3colrow">
+   <div class="col">
+      <label>Head: </label><input type="checkbox" name='attr_head' value="1">
+   </div>
+   <div class="col">
+      <label>Left Arm: </label><input type="checkbox" name='attr_leftarm' value="1">
+   </div>
+   <div class="col">
+      <label>Right Arm: </label><input type="checkbox" name='attr_rightarm' value="1">
+   </div>
+</div>
+<div class="3colrow">
+    <div class="col">
+      <label>Torso: </label><input type="checkbox" name='attr_torso' value="1">
+   </div>
+   <div class="col">
+      <label>Left Leg: </label><input type="checkbox" name='attr_leftleg' value="1">
+   </div>
+   <div class="col">
+      <label>Right Leg: </label><input type="checkbox" name='attr_rightleg' value="1">
+   </div>
+</div>
+<div>
+    <label>Condition: </label><textarea name='attr_condition'></textarea>
+</div>
+
+<h2>Range Weapons</h2>
+
+<span style="width:165px">Name</span>
+<span style="width:165px">Skill</span>
+<span style="width:165px">Damage</span>
+<span style="width:40px">Min</span>
+<span style="width:40px">AD</span>
+<span style="width:165px">ROF</span>
+<span style="width:165px">Recoil</span>
+<span style="width:165px">Range</span>
+<span style="width:40px">Clip</span>
+<fieldset class="repeating_rweapon">
+    <input type="text" name="attr_rwname" />
+    <input type="text" name="attr_rwskill" />
+    <input type="text" name="attr_rwdmg" />
+    <input type="number" name="attr_rwmindmg" />
+    <input type="number" name="attr_rwad" />
+    <input type="text" name="attr_rwrof" />
+    <input type="text" name="attr_rwrecoil" />
+    <input type="text" name="attr_rwrange" />
+    <input type="number" name="attr_rwclip" />
+</fieldset>
+
+<h2>Melee Weapons</h2>
+
+<span style="width:170px">Name</span>
+<span style="width:170px">Skill</span>
+<span style="width:170px">Damage</span>
+<span style="width:40px">Min</span>
+<span style="width:40px">AD</span>
+<fieldset class="repeating_mweapon">
+    <input type="text" name="attr_mwname" />
+    <input type="text" name="attr_mwskill" />
+    <input type="text" name="attr_mwdmg" />
+    <input type="number" name="attr_mwmindmg" />
+    <input type="number" name="attr_mwad" />
+</fieldset>
+
+<h2>Armour</h2>
+
+<span style="width:170px">Name</span>
+<span style="width:40px">PV</span>
+<span style="width:40px">Resistence</span>
+<fieldset class="repeating_armour">
+    <input type="text" name="attr_aname" />
+    <input type="number" name="attr_apv" />
+    <input type="number" name="attr_ares" />
+</fieldset>
+
+<h2>Equipment</h2>
+
+<span style="width:170px">Name</span>
+<fieldset class="repeating_wea">
+   <input type="text" name="attr_wea" />
+</fieldset>
+
+<h2>Notes</h2>
+
+<div>
+    <textarea name='attr_notes'></textarea>
+</div>
